@@ -88,7 +88,7 @@ const Home = props => {
 
   return (
     <>
-          {userContext.user.userId === 1 ? (
+          {userContext.user && userContext.user.userId === 1 ? (
               <List
                   loading={isLoading}
                   header={<h2>Products</h2>}
